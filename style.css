@@ -121,6 +121,44 @@ strong {
   content: url(images/icon-share.svg);
 }
 
+@media screen and (max-width: 700px) {
+  main {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .card-info {
+    flex-direction: column;
+    width: 90%;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .img,
+  .txt,
+  img {
+    width: 100%;
+  }
+  img {
+    border-radius: 10px 10px 0 0;
+  }
+  .s_social {
+    max-width: 700px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    left: 0;
+    border-radius: 0 0 10px 10px;
+    justify-content: flex-start;
+  }
+  .s_social span {
+    align-self: center;
+  }
+  .s_social::after {
+    display: none;
+  }
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
